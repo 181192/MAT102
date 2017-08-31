@@ -6,11 +6,12 @@
 import string
 
 
-def caesar(plaintext, shift):
+def caesar_encode(plaintext, shift):
     alphabet = string.ascii_lowercase
     shifted_alphabet = alphabet[shift:] + alphabet[:shift]
     table = str.maketrans(alphabet, shifted_alphabet)
     return plaintext.translate(table)
 
 
-print(caesar("This is a test string!", 20))
+print(caesar_encode("This is a test string!", 20))
+print(caesar_encode("Tbcm cm u nymn mnlcha!", -20))
