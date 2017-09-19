@@ -52,6 +52,13 @@ e = 241
 T = string_to_num(beskjed)
 U = RSA_encrypt(n, e, T)
 
+# Oppgave b)
+# Vi kan bruke Erastostenes' såld til å knekke RSA med den offentlige nøkkelen(n,e).
+# Siden n er produktet av to primtall, hvor det ene tallet er mindre en roten av n,
+# og det andre er større. Med det kan vi generere en liste av primtal fra 2 til
+# roten av n, og iterere gjennom den. Vi sjekker da om n er delelig på ett av
+# primtallene, hvis divisjonen går opp har vi funnet p. For å finne q må vi ta n/p.
+
 # Oppgave c)
 prim = prim(n)
 
