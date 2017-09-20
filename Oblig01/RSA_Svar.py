@@ -1,7 +1,12 @@
-# Eksempel på fullstendig bruk:
 import math
 
 from Oblig01.rsa.RSA import generate_primes, RSA_encrypt, mult_inverse, check_key
+
+
+# Navn på gruppe deltagere:
+# Kristoffer-Andre Kalliainen (181192)
+# Kathinka Neteland (181210)
+# Peder Wiig Aalen (181221)
 
 
 # Hjelpe metode for å oversette teksten til tabellform av tall
