@@ -8,7 +8,7 @@ import os
 from collections import Counter
 from string import ascii_lowercase
 
-filename = "../TekstFiler/macbeth"
+filename = "../tekst_filer/macbeth"
 
 
 def file_check(fn):
