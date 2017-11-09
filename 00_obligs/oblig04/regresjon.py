@@ -6,6 +6,7 @@ Created on Mon Nov  6 13:22:24 2017
 from pydataset import data
 import numpy as np
 import matplotlib.pyplot as plt
+import scipy.stats as sci
 
 cars = data('cars')
 # Speed numeric Speed - mph
@@ -85,6 +86,28 @@ plt.legend()
 plt.show()
 
 # c) utifra determinasjonskoeffisienten ser kvadratisk regresjonskurve best ut
+print('R^2:')
+slope, intercept, r_value, p_value, std_err = sci.linregress(x,y)
+print('R_value^2 Lineær:')
+print(pow(r_value,2))
+
+print('\nR^2 Lineær:')
+slope, intercept, r_value, p_value, std_err = sci.linregress(x,np.polyval(p1,x))
+print('R_value^2 Lineær:')
+print(pow(r_value,2))
+
+print('\nR^2 Kvadratisk:')
+slope, intercept, r_value, p_value, std_err = sci.linregress(x,np.polyval(p2,x))
+print('R_value^2 Kvadratisk:')
+print(pow(r_value,2))
+
+print('\nR^2 Kubisk:')
+slope, intercept, r_value, p_value, std_err = sci.linregress(x,np.polyval(p3,x))
+print('R_value^2 Kubisk:')
+print(pow(r_value,2))
+
+print('\nVi ser at den kvadratiske tilnærmingen oppfyller med 97.5% nyaktighet\n')
+
 # d) 43 ft
 # e)
 # print(calculatedY(x))
