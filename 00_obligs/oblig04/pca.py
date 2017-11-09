@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue Nov  7 00:42:37 2017
-@author: kathi
+
+181192, 181210, 181221
+Kristoffer-Andre Kalliainen, Kathinka Neteland og Peder Aalen
 """
 import numpy as np
 import scipy.io
